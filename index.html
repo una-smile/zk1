@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+    var arr = [66,8,11,15,16,18,2,6,15,6,8,16];
+    function fun(arr){
+        var brr = [];
+        for(var ind in arr){
+           if(brr.indexOf(arr[ind])==-1){
+               brr.push(arr[ind])
+           }
+        }
+        return brr.sort(function(a,b){return a>b});
+    }
+    console.log(fun(arr));
+</script>
+</body>
+</html>
